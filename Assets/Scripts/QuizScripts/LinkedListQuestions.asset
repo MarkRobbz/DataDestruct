@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf5c360f3dcd13439824111a724ebe0, type: 3}
+  m_Name: LinkedListQuestions
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: What is a Linked List?
+    answers:
+    - A collection of elements where each element points to the next and previous
+      elements.
+    - A sequence of elements arranged in a linear order, where each element is connected
+      to the next one via a pointer.
+    - A set of elements stored in random order with no connections between them.
+    - A collection of elements where each element is connected to two other random
+      elements.
+    correctAnswerIndex: 1
+    answerInfo:
+    - Incorrect. This description fits a doubly linked list specifically, rather
+      than describing all linked lists in general.
+    - Correct. This defines a linked list precisely; it's a data structure where
+      each element (often called a node) contains a link (a pointer) to the next
+      element in the sequence.
+    - Incorrect. The absence of connections between elements does not describe a
+      linked list; linked lists must have elements connected in a sequence, typically
+      by pointers.
+    - Incorrect. The term 'random' implies there is no specific order, which is not
+      the case for linked lists as they have a well-defined sequence. Additionally,
+      a standard linked list has each element pointing only to the next element,
+      not to two others. This might more closely describe a graph structure, depending
+      on the context.
+  - questionText: What is a major advantage of linked lists over arrays?
+    answers:
+    - One data field and one pointer to the next node.
+    - One data field and two pointers, one to the next node and one to the previous
+      node.
+    - Two data fields and one pointer to the next node.
+    - Two pointers, one to the next node and one to the previous node, but no data.
+    correctAnswerIndex: 2
+    answerInfo:
+    - Incorrect. This option describes a component of a singly linked list but does
+      not highlight an advantage over arrays.
+    - Correct. This describes a doubly linked list, which allows for traversal in
+      both directions. However, the major advantage over arrays is not explicitly
+      stated here. Typically, the advantage of linked lists (whether singly or doubly
+      linked) is that they allow for dynamic memory allocation and efficient insertion
+      and deletion of nodes.
+    - Incorrect. This option doesn't describe an advantage; it merely suggests a
+      structure with two data fields, which could be part of a more complex linked
+      list node but is not inherently advantageous over arrays.
+    - Incorrect. This option doesn't provide a data field which is essential for
+      storing information in a list, and thus it doesn't present an advantage over
+      arrays. Furthermore, pointers alone do not confer advantages without context
+      on how they are used.
+  - questionText: What happens during the deletion of a node in a singly linked list?
+    answers:
+    - The node is removed, and the list automatically sorts itself.
+    - Only the data in the node is deleted, but the node remains in the list.
+    - The next node's pointer is updated to point to the previous node.
+    - ' The previous node''s pointer is updated to point to the node after the deleted
+      node.'
+    correctAnswerIndex: 3
+    answerInfo:
+    - Incorrect. The deletion of a node does not automatically sort the list. Linked
+      lists do not sort themselves unless explicitly programmed to do so.
+    - Incorrect. If only the data is deleted, the node would still exist as a blank
+      or null element in the list, which is not standard behavior for deleting a
+      node in a linked list.
+    - Incorrect. In a singly linked list, each node only contains a pointer to the
+      next node, not the previous one, so there is no pointer to update pointing
+      to the previous node.
+    - Correct. When a node is deleted in a singly linked list, the previous node's
+      pointer must be updated to point to the node that follows the deleted node
+      to maintain the integrity of the list.

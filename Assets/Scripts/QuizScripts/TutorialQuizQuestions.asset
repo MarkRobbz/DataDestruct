@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf5c360f3dcd13439824111a724ebe0, type: 3}
+  m_Name: TutorialQuizQuestions
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: What Keyboard key do you press to interact with objects?
+    answers:
+    - You press the 'B' keyboard key.
+    - You press the 'E' keyboard key.
+    - You click woth the mouse.
+    - You don't press anything.
+    correctAnswerIndex: 1
+    answerInfo:
+    - You do not press the 'B' key as it does nothing.
+    - Yes, when prompted with on screen text you press the 'E' key.
+    - You do not click woth the mouse. You only use the mouse click in menus to select
+      buttons.
+    - If you didn't press anythig then you would get nowhere.
+  - questionText: How do you double jump?
+    answers:
+    - You press the 'E' keyboard key.
+    - The double jump is automatic so you don't need to press anything.
+    - You press the 'Space bar' key twice on the keyboard.
+    - You press the 'Space bar' key three times on the keyboard.
+    correctAnswerIndex: 2
+    answerInfo:
+    - This it not correct, this is the interaction key.
+    - Double jump is not automatic, you will struggle to jump to different locations
+      without it.
+    - Correct, this will allow you to get to higher heights!
+    - You will not be able to jump three times, you must tuch the ground again before
+      allowing you to jump again.
+  - questionText: For what purpose do you need to speack to B.M.O in each section
+      when you see her?
+    answers:
+    - B.M.O will help tell you information about the section you are in and what
+      to do along with allowing you to ask questions in relation to the section.
+    - B.M.O just wants to have a casual chat about life with you.
+    - B.M.O will try tell you the wrong information to confuse you.
+    - B.M.O is there to make fun of you for not understanding a topic.
+    correctAnswerIndex: 0
+    answerInfo:
+    - Yes, B.M.O was designd to assist you in each part of the game by explaing what
+      to do in each section fo the game while allowing you to gain furhter knowledge
+      by asking you own question around the topic in that area.
+    - B.M.O does like to have a chat, but she was not designed to be a cahtbot.
+    - B.M.O will not try to misguide you, she was not programmed with these notions
+      in mind.
+    - B.M.O will not make fun of you, her whole existance revolves around learning
+      and helping you to understand.

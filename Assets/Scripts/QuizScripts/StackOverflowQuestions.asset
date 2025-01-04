@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf5c360f3dcd13439824111a724ebe0, type: 3}
+  m_Name: StackOverflowQuestions
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: What is a Stack?
+    answers:
+    - A type of linked list where elements are processed in last-in-first-out (LIFO)
+      order.
+    - A collection of elements that can be accessed in any order.
+    - A sequence of elements in a continuous block of memory.
+    - A type of queue where elements are processed in first-in-first-out (FIFO) order.A
+      stack is a data structure where items are added and removed from the top, following
+      a last-in-first-out (LIFO) order. This means the last item you put in is the
+      first one you take out, similar to a stack of plates.
+    correctAnswerIndex: 0
+    answerInfo:
+    - This statement captures the LIFO principle of stack operations accurately,
+      but describing a stack as a type of linked list isn't entirely correct since
+      stacks can be implemented using arrays or linked lists.
+    - incorrect for a stack. It more accurately describes a data structure like an
+      array or a list where you can access elements directly by their index or position.
+      A stack, however, restricts access to the last element added (top of the stack),
+      adhering to the LIFO principle.
+    - This option is incorrect as the correct description of a stack. While it might
+      describe how a stack can be implemented (e.g., using an array), it does not
+      capture the essence of stack operations, which is the LIFO principle.
+    - 'Yes that is correct. '
+  - questionText: Which of the following operations is typically not supported by
+      a Stack?
+    answers:
+    - Transfer - moving the bottom element to the top of the stack.
+    - This is incorrect because stacks do not support arbitrary insertion; elements
+      can only be added to the top.
+    - Rotate - cycling elements from top to bottom continuously.
+    - Random Access - accessing an element at a specific position.
+    correctAnswerIndex: 3
+    answerInfo:
+    - This is incorrect because stacks do not allow direct operations on the bottom
+      element due to their LIFO nature.
+    - Incorrect as the unsupported operation because "Pop" is essential for stack
+      functionality, providing the means to remove the last added element.
+    - This is incorrect because stacks do not allow rotation of elements; they are
+      accessed in a strict LIFO order.
+    - This is correct as the unsupported operation because stacks do not provide
+      functionality for random access, only sequential LIFO access.
+  - questionText: Can you tell me why we push the head of the statue on first?
+    answers:
+    - Because it's the closest to us.
+    - It is first in last out, therefore the head will appear at the top.
+    - To honor ancient traditions of statue construction.
+    - Because the head is the heaviest part and needs to be at the top for balance.
+    correctAnswerIndex: 1
+    answerInfo:
+    - Incorrect. The proximity of the head to us is not the reason it's pushed on
+      first. The process is determined by the intended sequence of assembly.
+    - Correct. In a process similar to Last In, First Out (LIFO), the last piece
+      to be placed, which is the head in this scenario, will be at the top when the
+      statue is erected.
+    - Incorrect. While traditions can influence practices, the order of statue assembly
+      is typically based on structural needs rather than tradition alone.
+    - Incorrect. The weight and balance of the head are important, but the primary
+      reason for pushing the head on first is not necessarily due to its weight but
+      rather the sequence of construction, similar to LIFO in stack operations.

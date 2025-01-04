@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf5c360f3dcd13439824111a724ebe0, type: 3}
+  m_Name: ArrayAlleywayQuestions
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: What is an Array?
+    answers:
+    - A collection of items stored at contiguous memory locations.
+    - A function in a programming language.
+    - A type of loop in programming.
+    - A way to store variables in HTML.
+    correctAnswerIndex: 0
+    answerInfo:
+    - This is the accurate definition of an array. An array is a data structure consisting
+      of a collection of elements, each identified by at least one array index or
+      key. The elements are stored in contiguous memory locations, which allows for
+      efficient access to the elements.
+    - This is not a correct definition of an array. A function is a different concept
+      in programming; it is a block of code designed to perform a particular task.
+      Arrays and functions are fundamentally different constructs in programming.
+    - This statement is not correct. A loop is a programming construct that repeats
+      a block of code multiple times, but an array is a data structure used to store
+      multiple values. While loops can be used to iterate over arrays, they are not
+      the same thing.
+    - This option is not correct. HTML is a markup language used for creating and
+      structuring content on the web. It does not have a direct method for storing
+      variables like an array. Arrays are typically used in programming languages
+      like JavaScript, which can interact with HTML, but they are not a feature of
+      HTML itself.
+  - questionText: How can you access the Burger element you placed into the array
+      into the TrashArray?
+    answers:
+    - By calling the array's name only.
+    - TrashArray[6] (Using its index number.)
+    - TrashArray[5] (Using its index number.)
+    - Arrays cannot have individual elements accessed.
+    correctAnswerIndex: 2
+    answerInfo:
+    - Simply calling the array's name will not access a specific element within the
+      array. This action typically returns the entire array or its properties, not
+      an individual element.
+    - If "Burger" is indeed the seventh element in the array (with the first element
+      at index 0), then TrashArray[6] correctly accesses it. In zero-based indexing,
+      which is common in many programming languages, the index of an array element
+      is one less than its position number in the array.
+    - If the "Burger" element is in the slot labeled as 5, then it is at index 5.
+      In zero-based indexing, you would access this element with TrashArray[5].
+    - This is a repetition of the first option and is still incorrect for the same
+      reasons. Simply calling the array's name won't retrieve a specific element
+      from the array.
+  - questionText: What is a characteristic of an array in most programming languages?
+    answers:
+    - All elements must be of different data types.
+    - The size of the array can be changed dynamically.
+    - Elements are stored in random memory locations.
+    - All elements in the array must be of the same data type.
+    correctAnswerIndex: 3
+    answerInfo:
+    - This isn't right. Think of an array like a tray of eggs. All the eggs (elements)
+      are of the same kind; in the same way, an array is usually made to hold items
+      that are all of the same type.
+    - This isn't usually the case. When you first create an array, it's like deciding
+      how many eggs your tray can hold. Once you decide, you can't change it without
+      creating a new tray. Some special arrays are more like magic trays that can
+      grow or shrink, but the basic ones can't do this.
+    - Nope, that's not how it works. Arrays keep all their items in a neat line in
+      memory, kind of like how books are kept in a row on a shelf. This makes it
+      really easy to find an item because you know exactly where each one is placed.
+    - Yes, that's correct! Just like how a carton is made for eggs only and not for
+      mixing eggs with apples, an array is made to store items that are all the same
+      type. This makes sure that the space in memory is used well and everything
+      stays organized.

@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaf5c360f3dcd13439824111a724ebe0, type: 3}
+  m_Name: TreeTopTraversalQuestions
+  m_EditorClassIdentifier: 
+  questions:
+  - questionText: What is a Binary Tree?
+    answers:
+    - ' A tree where each node has exactly two children.'
+    - A tree where each node has at most two children.
+    - A tree with two nodes.
+    - A tree made up of binary numbers.
+    correctAnswerIndex: 1
+    answerInfo:
+    - Incorrect. While a binary tree can have nodes with two children, it's not required
+      for each node to have exactly two.
+    - Correct! A binary tree is characterized by nodes having at most two children,
+      which may be none, one, or two.
+    - Incorrect. The number of nodes in a binary tree is not restricted to two; it
+      can have zero, one, or many nodes.
+    - Incorrect. A binary tree is not defined by the data it holds (binary numbers
+      or otherwise) but by its structure of nodes and children.
+  - questionText: 'In a Preorder traversal of a binary tree, the traversal sequence
+      is:'
+    answers:
+    - Left, Root, Right
+    - Left, Right, Root
+    - Root, Right, Left
+    - Root, Left, Right
+    correctAnswerIndex: 3
+    answerInfo:
+    - Correct! Inorder traversal of a binary search tree produces a sorted list because
+      it visits nodes from the smallest to the largest value.
+    - Incorrect. Inorder traversal actually starts with the leftmost node, which
+      is the smallest in the tree, not the rightmost.
+    - Incorrect. Inorder traversal can be used on any binary tree, and it is especially
+      useful for binary search trees.
+    - 'Incorrect. Each node is visited once in inorder traversal, not three times. '
+  - questionText: How deep is this the Binary Tree you Traversed?
+    answers:
+    - 4 levels deep.
+    - 2 levels deep.
+    - 3 levels deep.
+    - 7 levels deep
+    correctAnswerIndex: 2
+    answerInfo:
+    - Incorrect. There are no nodes beyond the third level in this tree, so it is
+      not 4 levels deep.
+    - Incorrect. The tree extends beyond 2 levels; it has a root, children, and grandchildren,
+      which constitutes more than 2 levels.
+    - Correct! This tree has a root at level 1, its children at level 2, and its
+      grandchildren at level 3, making it 3 levels deep.
+    - Incorrect. The tree does not have 7 levels; the number of levels in a tree
+      is not determined by the highest node value.
